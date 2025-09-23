@@ -56,18 +56,18 @@
             <div class="part3-content">
                 <div class="part3-text">
                     <h3>1. Instalación de SSH.</h3>
-                    <p>Al instalar la distribución de Ubuntu, nos da la opción de instalar SSH de forma muy sencilla.</p>
-                    <img src="imagenes/installSSH01.png"><br>
-                    <p>En caso de no haber seleccionado esta opción se necesita del comando "sudo apt install ssh".</p>
-                    <img src="imagenes/installSSH02.png"><br>
+                    <p>Durante la instalación de la distribución de Ubuntu, se da la opción de instalar SSH de forma muy sencilla.</p>
+                    <img src="imagenes/installSSH01.png" width="600"><br>
+                    <p>En caso de no haber seleccionado esta opción, se necesita del comando "sudo apt install ssh".</p>
+                    <img src="imagenes/installSSH02.png" width="600"><br>
 
                     <h3>2. Acceso desde la máquina local con SSH</h3>
                     <p>Lo primero que se tiene que hacer, es obtener la IP con el comando "ifconfig", en este caso es: 192.168.115.129.</p>
-                    <img src="imagenes/obtenerIP.png"><br>
+                    <img src="imagenes/obtenerIP.png" width="600"><br>
                     <p>Se anota la IP, para, posteriormente, ingresar el comando "ssh [nombreUsuario]@[IP]" desde la terminal local.</p>
                     <p>Después te pedirá aceptar un algoritmo SHA256 para firmar una fingerprint, se selecciona "yes" y se ingresa la contraseña.</p>
                     <p>Al realizar estos pasos, se está mnejando el sistema operativo Linux, desde la terminal local (Microsoft).</p>
-                    <img src="imagenes/accesoRemotoSSH.png"><br>
+                    <img src="imagenes/accesoRemotoSSH.png" width="600"><br>
                 </div>
             </div>
         </section>
@@ -78,20 +78,20 @@
                 <div class="part4-text">
                     <h3>1. Instalación de FTP.</h3>
                     <p>Se requiere el siguiente comando: "sudo apt install vsftpd".</p>
-                    <img src="imagenes/installFTP.png"><br>
+                    <img src="imagenes/installFTP.png" width="600"><br>
                     
                     <h3>2.Accesos desde la máquina local con FTP</h3>
                     <p>Es un proceso muy similar al acceso con SSH, el comando es "sftp [nombreUsuario]@[IP]" y la contraseña del usuario.</p>
-                    <img src="imagenes/accesoRemotoSFTP.png"><br>
+                    <img src="imagenes/accesoRemotoSFTP.png" width="600"><br>
 
                     <h3>3. Uso de get y put con SFTP</h3>
                     <p>SFTP permite mandar archivos de una máquina a otra.</p>
                     <p>Para mandar archivos locales a la máquin virtual se usa "put" y el nombredel archivo.</p>
                     <p>En este caso, mandaremos el archivo anahuac.png que se enuentra en la parte final de mis archivos.</p>
-                    <img src="imagenes/put01.png"><br>
-                    <img src="imagenes/put02.png"><br>
+                    <img src="imagenes/put01.png" width="600"><br>
+                    <img src="imagenes/put02.png" width="600"><br>
                     <p>Por último, se compruba que el archivo esté en la máquina virtual.</p>
-                    <img src="imagenes/put03.png"><br>
+                    <img src="imagenes/put03.png" width="600"><br>
                 </div>
             </div>
         </section>
@@ -102,28 +102,28 @@
                 <div class="part5-text">
                     <h3>1. Actualización de APT.</h3>
                     <p>El primer paso es actualizar el paquete instalador apt, de la siguiente forma:</p>
-                    <img src="imagenes/lamp01.png"><br>
+                    <img src="imagenes/lamp01.png" width="600"><br>
                     
                     
                     <h3>2. Instalación de tasksel.</h3>
                     <p>Se instala tasksel con "sudo apt-get install -y tasksel".</p>
-                    <img src="imagenes/lamp02.png"><br>
+                    <img src="imagenes/lamp02.png" width="600"><br>
 
                     <h3>3. Instalación de LAMP Server.</h3>
                     <p>Con el paquete tasksel, se instala lamp-server con "sudo tasksel install lamp-server".</p>
-                    <img src="imagenes/lamp03.png"><br>
+                    <img src="imagenes/lamp03.png" width="600"><br>
 
                     <h3>4. Instalación de Apache.</h3>
                     <p>Con el paquete tasksel, se instala Apache con "sudo apt install apache2".</p>
-                    <img src="imagenes/lamp04.png"><br>
+                    <img src="imagenes/lamp04.png" width="600"><br>
 
                     <h3>5. Visualización en navegador local.</h3>
                     <p>Ahora, si se ingresa la IP de la máquina virtual en el navegador local, podremos ver la página predeterminada de Apache.</p>
-                    <img src="imagenes/lamp05.png"><br>
+                    <img src="imagenes/lamp05.png" width="600"><br>
 
                     <h3>6. Visualización en navegador virtual.</h3>
                     <p>También se puede ingresar desde la máquina de Linux, ingresando "localhost" en el navegador.</p>
-                    <img src="imagenes/lamp06.png"><br>
+                    <img src="imagenes/lamp06.png" width="600"><br>
                 </div>
             </div>
         </section>
@@ -137,9 +137,9 @@
                         Al entrar a la máquina virtual y movernos a la carpeta var, vamos a poder ver que se instalaron componentes como www y http. Al ingresar en la carpeta, podemos ver con "ls" el index predeterminado.
                         Con ayuda de nano, creamos la carpeta de cada quien con su propio index. Además, definimos un archivo css general que sea aplicado a toda la página.
                     </p>
-                    <img src="imagenes/pag01.png"><br>
-                    <img src="imagenes/pag02.png"><br>
-                    <img src="imagenes/pag03.png"><br>
+                    <img src="imagenes/pag01.png" width="600"><br>
+                    <img src="imagenes/pag02.png" width="600"><br>
+                    <img src="imagenes/pag03.png" width="600"><br>
                     <p>No obstante, para el desarollo del resto de la página, optamos por crear un repositorio de Git y GitHub para trabajar colaborativamente. Así mismo, usamos el editor de código de nuestra preferencia para después subir los cambios usando SFTP.</p>
                     
                     <br>
