@@ -58,14 +58,13 @@
                     <h3>1. Instalación de SSH.</h3>
                     <p>Al instalar la distribución de Ubuntu, nos da la opción de instalar SSH de forma muy sencilla.</p>
                     <img src="imagenes/installSSH01.png"><br>
-
                     <p>En caso de no haber seleccionado esta opción se necesita del comando "sudo apt install ssh".</p>
                     <img src="imagenes/installSSH02.png"><br>
 
                     <h3>2. Acceso desde la máquina local con SSH</h3>
                     <p>Lo primero que se tiene que hacer, es obtener la IP con el comando "ifconfig", en este caso es: 192.168.115.129.</p>
                     <img src="imagenes/obtenerIP.png"><br>
-                    <p>Se guarda la IP, para, posteriormente, ingresar el comando "ssh [nombreUsuario]@[IP] desde la terminal local."</p>
+                    <p>Se anota la IP, para, posteriormente, ingresar el comando "ssh [nombreUsuario]@[IP]" desde la terminal local.</p>
                     <p>Después te pedirá aceptar un algoritmo SHA256 para firmar una fingerprint, se selecciona "yes" y se ingresa la contraseña.</p>
                     <p>Al realizar estos pasos, se está mnejando el sistema operativo Linux, desde la terminal local (Microsoft).</p>
                     <img src="imagenes/accesoRemotoSSH.png"><br>
@@ -78,7 +77,21 @@
             <div class="part4-content">
                 <div class="part4-text">
                     <h3>1. Instalación de FTP.</h3>
-                    <p>sudo apt install vsftpd</p>
+                    <p>Se requiere el siguiente comando: "sudo apt install vsftpd".</p>
+                    <img src="imagenes/installFTP.png"><br>
+                    
+                    <h3>2.Accesos desde la máquina local con FTP</h3>
+                    <p>Es un proceso muy similar al acceso con SSH, el comando es "sftp [nombreUsuario]@[IP]" y la contraseña del usuario.</p>
+                    <img src="imagenes/accesoRemotoSFTP.png"><br>
+
+                    <h3>3. Uso de get y put con SFTP</h3>
+                    <p>SFTP permite mandar archivos de una máquina a otra.</p>
+                    <p>Para mandar archivos locales a la máquin virtual se usa "put" y el nombredel archivo.</p>
+                    <p>En este caso, mandaremos el archivo anahuac.png que se enuentra en la parte final de mis archivos.</p>
+                    <img src="imagenes/put01.png"><br>
+                    <img src="imagenes/put02.png"><br>
+                    <p>Por último, se compruba que el archivo esté en la máquina virtual.</p>
+                    <img src="imagenes/put03.png"><br>
                 </div>
             </div>
         </section>
